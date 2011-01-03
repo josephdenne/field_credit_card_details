@@ -11,7 +11,7 @@ Provides a validated field for credit card type and number, designed to be used 
 
 Verifying card details before submission reduces the chance of fraudulent activity. It is also a prerequisite for many card processing authorities.
 
-## Validation
+### Validation
 
 Credit numbers are validated on a card-type basis. Validation checks for:
 
@@ -19,7 +19,7 @@ Credit numbers are validated on a card-type basis. Validation checks for:
 * Number prefix(es)
 * Modulus 10 check digit(s)
 
-## Supported credit card types
+### Supported credit card types
 
 * American Express
 * Diners Club Carte Blanche
@@ -34,6 +34,10 @@ Credit numbers are validated on a card-type basis. Validation checks for:
 * Visa
 * Visa Electron
 * LaserCard
+
+### Bypassing card validation
+
+You can bypass card validation by using the credit card number: 9999 9999 9999 9999
 
 ## Installation
 
