@@ -1,6 +1,6 @@
 # Field: Credit Card Details
 
-* Version: 1.2
+* Version: 1.3
 * Author: Joseph Denne (me@josephdenne.com)
 * Build Date: 03rd January 2011
 * Requirements: Symphony 2.0.3 or later
@@ -13,7 +13,7 @@ Verifying card details before submission reduces the chance of fraudulent activi
 
 ### Validation
 
-Credit numbers are validated on a card-type basis. Validation checks for:
+Credit card numbers are validated on a card-type basis. Validation checks for:
 
 * Number length
 * Number prefix(es)
@@ -56,6 +56,9 @@ You can bypass card validation by using the credit card number: 9999 9999 9999 9
 ![Data Source attached to a page and working](http://josephdenne.com/workspace/images/screenshots/field-credit-card-details/front-end-output.png)
 
 [CHANGES]
+
+1.3
+- Changed method of card storage to only retain the last four digits of a card on Nick Dunn's suggestion (e.g. xxxx-xxxx-xxxx-2292)
 
 1.2
 - Fixed bug with MasterCard verification routine
