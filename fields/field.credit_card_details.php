@@ -308,13 +308,19 @@
 		}
 
 		private static function __hashit($data) {
+		
+			if(strlen($data) == 0) {
 
-			if(strlen($data) == 0) return;
-			elseif(strlen($data) != 32 || !preg_match('@^[a-f0-9]{32}$@i', $data)) return md5($data);
+				return;
+			}
+			else if (!strpos($data, "xxxx-xxxx-xxxx-")) {
+
+				$data = str_replace(" ", "", $data);
+				$data = "xxxx-xxxx-xxxx-".substr($data,-4,4);
+			}
 
 			return $data;
 		}
-
 
 		public function processRawFieldData($data, &$status, $simulate=false, $entry_id=NULL) {
 
