@@ -291,10 +291,10 @@
 					$message = $ccErrors [$errornumber];
 					return self::__INVALID_FIELDS__;
 				};
-
-				// The credit card is in the required format.
-				return self::__OK__;
 			}
+
+			// The credit card is in the required format.
+			return self::__OK__;
 		}
 
 		function appendFormattedElement(&$wrapper, $data, $encode=false) {
